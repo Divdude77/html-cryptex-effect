@@ -1,0 +1,56 @@
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+html {
+    overflow-x: hidden;
+    --color: darkgray;
+}
+
+body {
+    position:relative;
+    height: 200vh;
+    margin: 0;
+}
+
+#sentence {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 200vh;
+    font-weight: bold;
+}
+
+.letter {
+    font-size: 8.5vw;
+    height: fit-content;
+    position: sticky;
+    top: 20%;
+    color: var(--color);
+    transition: color 0.5s;
+}
+
+.letter::before {
+    content: var(--random-content);
+    position: absolute;
+    color: darkgray;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -15px;
+    top: 75%;
+    left: -75%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.letter::after {
+    content: var(--random-content);
+    position: absolute;
+    color: darkgray;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -15px;
+    bottom: 100%;
+    left: -75%;
+}
