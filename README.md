@@ -5,3 +5,5 @@ Works better in portrait.
 <div align="center">
   <img height=800 src="https://github.com/Divdude77/html-cryptex-effect/assets/75612147/e2c67861-4f13-4c99-929b-95490eef9002">
 </div>
+
+Change the sentence variable in JS and adjust the font size to have the sentence whatever you want it to be!
